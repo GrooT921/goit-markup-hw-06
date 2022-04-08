@@ -71,12 +71,10 @@
 
                 <section class="hero">
 
-                        <div class="container">
-
-                            <h1 class="headline">Эффективные решения для вашего бизнеса</h1>
-                            <button type="button" class="item-buttons" data-modal-open>Заказать услугу</button>
-
-                        </div>
+                    <div class="container">
+                        <h1 class="headline">Эффективные решения для вашего бизнеса</h1>
+                        <button type="button" class="item-buttons" data-modal-open>Заказать услугу</button>
+                    </div>
                 
                 </section>
 
@@ -400,6 +398,8 @@
                     </address>
                 </div>
 
+                <!-- Соцсети футер -->
+
                 <div class="footer-join">
                     <h3 class="join">Присоединяйтесь</h3>
                     
@@ -430,12 +430,30 @@
                                 </svg></a>
                         </li>
                     </ul>
+
                 </div>
+
+                <!-- Футер форма -->
+                
+                <form class="form-footer">
+                    <div class="flex-form">
+            
+                        <label for="mail" class="label-mail">Подпишитесь на рассылку</label>
+                        <div class="item-form">
+                            <input type="email" name="mail" id="mail" placeholder="E-mail" class="mail-sub">
+                            <button type="submit" class="sub-button">Подписаться</button>
+                        </div>
+                    </div>
+            
+                </form>
+
             </div>
 
         </div>
             
     </footer>
+
+    <!-- Модальное окно -->
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -444,8 +462,39 @@
                     <use href="./img/symbol-defs.svg#icon-modal"></use>
                 </svg>
             </button>
+
+            <!-- Форма модального окна  -->
+
+            <form>
+                <div class="modal-form">
+                    <b>Оставьте свои данные, мы вам перезвоним</b>
+
+
+                    <label for="name" class="label-form">Имя</label>
+                    <input type="name" id="name" class="input-form">
+
+                    <label for="tel" class="label-form">Телефон</label>
+                    <input type="tel" id="tel" class="input-form">
+
+                    <label for="mail" class="label-form">Почта</label>
+                    <input type="email" id="mail" class="input-form">
+
+                    <label for="comment" class="label-form">Комментарий</label>
+                    <textarea name="comment" id="comment" rows="8" class="input-form" placeholder="Введите текст"></textarea>
+
+                    <div>
+                        <input type="checkbox" name="policy" id="policy">
+                        <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                    </div>
+                    <button type="submit">Отправить</button>
+                </div>
+            
+            </form>
         </div>
+
+    
     </div>
+
     <script src="./js/modal.js"></script>
 </body>
 </html>

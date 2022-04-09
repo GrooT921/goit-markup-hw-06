@@ -441,7 +441,11 @@
                         <label for="mail" class="label-mail">Подпишитесь на рассылку</label>
                         <div class="item-form">
                             <input type="email" name="mail" id="mail" placeholder="E-mail" class="mail-sub">
-                            <button type="submit" class="sub-button">Подписаться</button>
+                            <button type="submit" class="sub-button"><span class="text-sub">Подписаться</span>
+                            <svg class="icon-send" width="24px" height="24px">
+                                <use href="./img/symbol-defs.svg#icon-send"></use>
+                            </svg>
+                            </button>
                         </div>
                     </div>
             
@@ -467,26 +471,36 @@
 
             <form>
                 <div class="modal-form">
-                    <b>Оставьте свои данные, мы вам перезвоним</b>
+
+                    <b class="text-form">Оставьте свои данные, мы вам перезвоним</b>
 
 
                     <label for="name" class="label-form">Имя</label>
-                    <input type="name" id="name" class="input-form">
+                    <input type="name" id="name" class="input-form" name="name">
 
                     <label for="tel" class="label-form">Телефон</label>
-                    <input type="tel" id="tel" class="input-form">
+                    <input type="tel" id="tel" class="input-form" name="tel">
 
                     <label for="mail" class="label-form">Почта</label>
-                    <input type="email" id="mail" class="input-form">
+                    <input type="email" id="mail" class="input-form" name="mail">
 
                     <label for="comment" class="label-form">Комментарий</label>
                     <textarea name="comment" id="comment" rows="8" class="input-form" placeholder="Введите текст"></textarea>
-
-                    <div>
-                        <input type="checkbox" name="policy" id="policy">
-                        <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                    
+                    <div class="box-policy">    
+                        
+                        <label for="policy" class="label-policy">Соглашаюсь с рассылкой и принимаю Условия договора
+                            <svg class="svg-border" width="16px" height="15px">
+                                <use href="./img/symbol-defs.svg#icon-ramka"></use>
+                            </svg>
+                        </label>
+                        <input type="checkbox" name="policy" id="policy" class="checkbox">
+                        
                     </div>
-                    <button type="submit">Отправить</button>
+
+                    <div class="button-modal">
+                    <button type="submit" class="button-form">Отправить</button>
+                    </div>
                 </div>
             
             </form>

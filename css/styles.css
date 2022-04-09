@@ -832,11 +832,23 @@ margin-right: 10px;
   padding: 40px;
 }
 
+.text-form{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 12px;
+}
+
 .label-form{
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+
+  margin-bottom: 4px;
   
   color: var(--second-color-text);
 }
@@ -845,7 +857,7 @@ margin-right: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-
+  margin-bottom: 10px;
 }
 
 .modal-form textarea::placeholder{
@@ -859,7 +871,67 @@ margin-right: 10px;
   color: rgba(117, 117, 117, 0.5);
 }
 
+.modal-form:last-of-type textarea{
+  margin-bottom: 0;
+}
 
+.checkbox{
+
+  /* width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; */
+}
+
+.box-policy {
+  position: relative;
+  display: block;
+}
+
+.svg-border{
+  position: absolute;
+  left:0;
+  top:0;
+  transform: translateY(25%);
+
+}
+
+.checkbox:checked + .svg-border{
+  background-color: red;
+}
+
+.label-policy{
+  
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  
+  letter-spacing: 0.03em;
+  
+  color: var(--second-color-text);
+}
+
+.button-form{
+  width: 200px;
+  height: 50px;
+
+  letter-spacing: 0.06em;
+  color: var(--button-color-text);
+  background: var(--accent-color-text);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.button-modal{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
 
 /* Футер форма */
 
@@ -910,17 +982,33 @@ letter-spacing: 0.03em;
 }
 
 .sub-button{
+  position: relative;
+
   width: 200px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.8;
-  text-align: center;
-  letter-spacing: 0.06em;
-  
+  padding: 0;
   color: var(--button-color-text);
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background: var(--accent-color-text);
+}
+
+.text-sub{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  margin: 0;
+  padding-right: 62px;
+  padding-left: 29px;
+ 
+}
+
+.icon-send{
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+  
 }
 

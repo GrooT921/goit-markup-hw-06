@@ -727,6 +727,10 @@ margin-right: 10px;
   display: flex;
 }
 
+.footer-item{
+  flex-grow: 1;
+}
+
 .footer {
   padding: 60px 0;
   background: #2f303a;
@@ -742,6 +746,15 @@ margin-right: 10px;
 
 .footer-logo {
   margin-bottom: 20px;
+}
+
+.logo-item {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+
+  color: var(--accent-color-text);
 }
 
 .footer-contacts,
@@ -921,10 +934,10 @@ margin-right: 10px;
 
 .checkbox:checked + .svg-border{
   border-radius: 2px;
-  border-color: #2196f3;
   background-color: var(--accent-color-text);
   background-image: url(../img/icon-check.svg);
   background-origin: border-box;
+  fill: transparent;
 }
 
 .checkbox{ 
@@ -940,16 +953,14 @@ margin-right: 10px;
 }
 
 .svg-border{
-  position: absolute;
-  left:0;
-  top:50%;
-  transform: translateY(-50%);
+  margin-right: 8px;
 }
 
 .label-policy{
-  position: relative;
+  display: flex;
+  justify-content: center;
   text-align: center;
-  display: block;
+  align-items: center;
   
   font-weight: 400;
   font-size: 14px;
@@ -1032,15 +1043,17 @@ color: var(--button-color-text);
 }
 
 .flex-form input::placeholder{
-font-weight: 400;
-font-size: 16px;
-line-height: 1.25;
-letter-spacing: 0.03em;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .sub-button{
-  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
   width: 200px;
   padding: 0;
@@ -1057,16 +1070,9 @@ letter-spacing: 0.03em;
   line-height: 1.8;
   letter-spacing: 0.06em;
   margin: 0;
-  padding-right: 62px;
-  padding-left: 29px;
- 
 }
 
 .icon-send{
-  position: absolute;
-  top: 50%;
-  right: 28px;
-  transform: translateY(-50%);
-  
+  margin-left: 10px;
 }
 
